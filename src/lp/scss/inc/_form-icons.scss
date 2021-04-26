@@ -1,0 +1,61 @@
+
+$iconOffsetTop: 45px;
+$iconOffsetLeft: 25px;
+// To adjust padding of the inputs see line 31 below
+
+$icons: (
+    person: "f007",
+    envelope: "f0e0",
+    justify: "f039",
+    map: "f3c5",
+    phone: "f095",
+    building: "f1ad",
+    monster-truck: "f63b"
+);
+
+// Mixin that Sets Icons Up
+@mixin fieldIcons($icon){
+    $icon: map-get($icons, $icon);
+    position: relative;
+    label.field-label::before{
+      content: unquote("\"")+unquote(str-insert($icon, "\\", 1))+unquote("\"");
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      color: $primary-color;
+      display: block;
+      position: absolute;
+      top: $iconOffsetTop;
+      left: $iconOffsetLeft;
+    }
+    input {
+      padding-left: 40px !important;
+    }
+  }
+
+// Default Icon
+p.pd-text {
+  @include fieldIcons(justify);
+}
+  
+p.first_name, p.last_name{
+    @include fieldIcons(person);
+}
+
+p.company{
+  @include fieldIcons(building);
+}
+
+p.email{
+  @include fieldIcons(envelope);
+}
+
+p.phone{
+  @include fieldIcons(phone);
+}
+
+p.country, p.city, p.state, p.zip{
+  @include fieldIcons(map);
+}
+
+
+

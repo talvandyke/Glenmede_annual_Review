@@ -1,0 +1,13 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mx-auto">
+        {% if controls.demo_form %}
+          {% include "../includes/_demo-form.njk" %}
+        {% else %}
+          %%content%%
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

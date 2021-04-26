@@ -1,0 +1,23 @@
+{
+    "social": [
+        {
+            "name": "facebook",
+            "link": "#",
+            "lp_icon": "<i class=\"fab fa-facebook-f\"></i>",
+            "email_icon": "https://www.mailjet.com/images/theme/v1/icons/ico-social/facebook.png"
+        },
+        {
+            "name": "twitter",
+            "link": "#",
+            "lp_icon": "<i class=\"fab fa-twitter\"></i>",
+            "email_icon": "https://www.mailjet.com/images/theme/v1/icons/ico-social/twitter.png"
+        },
+        {
+            "name": "linkedin",
+            "link": "#",
+            "lp_icon": "<i class=\"fab fa-linkedin\"></i>",
+            "email_icon": "https://www.mailjet.com/images/theme/v1/icons/ico-social/linkedin.png"
+        }
+        
+    ]
+}

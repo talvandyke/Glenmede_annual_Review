@@ -1,0 +1,11 @@
+{
+    "controls": {
+        "demo_form": true,
+        "fixed_nav": true,
+        "nav_links": false,
+        "email_nav": 3,
+        "inline_form_fields": true,
+        "bootstrap_form_fields": true,
+        "hml": true
+    }
+}

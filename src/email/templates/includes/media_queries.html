@@ -1,0 +1,58 @@
+<style type="text/css">
+    @media only screen and (max-width:480px) {
+        table.full-width-mobile {
+            width: 100% !important;
+        }
+
+        td.full-width-mobile {
+            width: auto !important;
+        }
+
+        .img-fluid {
+            max-width: 100% !important;
+            width: 100% !important;
+            height: auto !important;
+            max-height: unset !important;
+        }
+    }
+
+    @media (max-width:480px) {
+        td.mobileCenter>div {
+            width: 100% !important;
+            text-align: center !important;
+        }
+    }
+
+
+    noinput.mj-menu-checkbox {
+        display: block !important;
+        max-height: none !important;
+        visibility: visible !important;
+    }
+
+    @media only screen and (max-width:480px) {
+        .mj-menu-checkbox[type="checkbox"]~.mj-inline-links {
+            display: none !important;
+        }
+
+        .mj-menu-checkbox[type="checkbox"]:checked~.mj-inline-links,
+        .mj-menu-checkbox[type="checkbox"]~.mj-menu-trigger {
+            display: block !important;
+            max-width: none !important;
+            max-height: none !important;
+            font-size: inherit !important;
+        }
+
+        .mj-menu-checkbox[type="checkbox"]~.mj-inline-links>a {
+            display: block !important;
+        }
+
+        .mj-menu-checkbox[type="checkbox"]:checked~.mj-menu-trigger .mj-menu-icon-close {
+            display: block !important;
+        }
+
+        .mj-menu-checkbox[type="checkbox"]:checked~.mj-menu-trigger .mj-menu-icon-open {
+            display: none !important;
+        }
+    }
+</style>

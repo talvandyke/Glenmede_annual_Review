@@ -1,0 +1,33 @@
+{% extends "layout/_layout.html" %}
+
+{% block header %}
+
+    {% include "sections/header/_preheader-text.html" %}
+    {% if controls.email_nav === 1 %}
+        {% include "sections/header/_email_header_and_nav.html" %}
+    {% elseif controls.email_nav === 2 %}
+        {% include "sections/header/_email_header_logo_centered.html" %}
+    {% elseif controls.email_nav === 3 %}
+        {% include "sections/header/_email_header_NO_nav.html" %}
+    {% endif %}
+
+{% endblock %}
+
+{% block content %}
+
+    {% include "sections/content/_full_width_image.html" %}
+    {% include "sections/content/_headline_numbered_list.html" %}
+    {% include "sections/content/_divider.html" %}
+    {% include "sections/content/_step_by_step.html" %}
+    {% include "sections/content/_testimonial.html" %}
+    {% include "sections/content/_why_work_title.html" %}
+    {% include "sections/content/_50-50_no_image.html" %}
+    {% include "sections/content/_divider.html" %}
+    {% include "sections/content/_headline_cta.html" %}
+
+{% endblock %}
+
+{% block footer %}
+    {% include "sections/footer/_footer.html" %}
+
+{% endblock %}

@@ -1,0 +1,127 @@
+// Custom Fonts
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i");
+
+$font-stack: (
+  open-sans: (
+    "Open Sans",
+    Arial,
+    Helvetica,
+    sans-serif,
+  ),
+  lato: (
+    "Lato",
+    Arial,
+    Helvetica,
+    sans-serif,
+  ),
+);
+// Accessor Function of map-get $font-stack
+@function font-stack($key) {
+  @return map-get($font-stack, $key);
+}
+
+// Generate Font Stack Classes (ex: class="open-sans")
+
+@each $key, $value in $font-stack {
+  .#{$key} {
+    font-family: $value !important;
+  }
+}
+
+
+$primary-font: font-stack(open-sans);
+$headline-font: font-stack(lato);
+
+$font-weight: (
+  extra-light: 200,
+  light: 300,
+  normal: 400,
+  semi-bold: 500,
+  bold: 600,
+  extra-bold: 700,
+  heavy: 800,
+  black: 900,
+);
+
+// Generate Font Weight Classes (ex: class="font-extra-light")
+
+@each $key, $value in $font-weight {
+  .font-#{$key} {
+    font-weight: $value !important;
+  }
+}
+
+// Colors
+
+$color: (
+  transparent: transparent,
+  body: #212529,
+  white: #ffffff,
+  grey: #f4f8ff,
+  orange: #ff7300,
+  blue: #082b4b,
+  dark-blue: #051c31,
+);
+
+
+// Accessor Function of map-get $color
+
+@function color($key) {
+  @return map-get($color, $key);
+}
+
+$primary-color: color(orange);
+$secondary-color: color(blue);
+
+.text-primary {
+  color: $primary-color !important;
+}
+.bg-primary {
+  background-color: $primary-color !important;
+}
+.border-primary {
+  border-color: $primary-color !important;
+}
+
+.text-secondary {
+  color: $secondary-color !important;
+}
+.bg-secondary {
+  background-color: $secondary-color !important;
+}
+.border-secondary {
+  border-color: $secondary-color !important;
+}
+
+// Generate Text, Background, and Border Color Classes for Each Color (ex: class="bg-orange")
+
+@each $key, $value in $color {
+  .text-#{$key} {
+    color: $value !important;
+  }
+  .bg-#{$key} {
+    background-color: $value !important;
+  }
+  .border-#{$key} {
+    border-color: $value !important;
+  }
+}
+
+
+
+// Border Radius
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
+
+// Box Shadow
+@mixin box-shadow($args) {
+  box-shadow: $args;
+  -webkit-box-shadow: $args;
+  -moz-box-shadow: $args;
+}

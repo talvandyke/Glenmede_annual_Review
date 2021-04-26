@@ -1,0 +1,8 @@
+<!-- Dynamic Offset for Fixed Nav -->
+<script>
+  $(document).ready(function () {
+    var nav_height = $("header .navbar").outerHeight();
+    var hero_padding = parseInt($("#hero").css("padding-top"));
+    $("#hero").css("padding-top", nav_height + hero_padding + "px");
+  });
+</script>

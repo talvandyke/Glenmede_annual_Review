@@ -1,0 +1,40 @@
+{% set body_class = "full-screen" %}
+{% extends "layout/_layout_full_screen.njk" %}
+
+{% block custom_css %}
+
+    <!-- Place Custom Styles Inside <style> Tag -->
+
+{% endblock %}
+
+{% block header %}
+    <header>
+        {% include "sections/_nav.njk"%}
+    </header>
+{% endblock %}
+
+{% block content %}
+
+    <!-- Image Right, Content Left -->
+    <section id="image-right-content-left">
+        <div class="container">
+            <div class="row">
+                <div pardot-region="Full Screen - Left Content" class="col-md-6">
+                    <h1>Main Headline Dolor Sit Amet</h1>
+                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, sit.</p>
+                    <a pardot-region="Opens Form" href="javscript:void(0)" class="btn btn-primary" data-toggle="modal" data-target="#pardotModal">Download Now</a>
+                </div>
+                <div class="col-md-4 offset-md-1">
+                    <img pardot-region="Full Screen Right - Image" src="https://via.placeholder.com/500x500" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+{% endblock %}
+
+{% block footer %}
+
+    {% include "sections/_modal_full_screen.njk"%}
+{% endblock %}

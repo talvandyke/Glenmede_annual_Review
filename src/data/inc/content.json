@@ -1,0 +1,36 @@
+{
+    "images": {
+        "lp_header": "https://maljenkins.github.io/cheshPublic/images/header_backdrop.jpg",
+        "full_width_email": "https://picsum.photos/600/300"
+    },
+    "links": {
+        "nav": [
+            {
+                "text": "Services",
+                "url": "https://www.cheshireimpact.com/services/"
+            },
+            {
+                "text": "About",
+                "url": "https://www.cheshireimpact.com/about/"
+            },
+            {
+                "text": "Contact",
+                "url": "https://www.cheshireimpact.com/contact/"
+            }
+        ],
+        "email_nav": [
+            {
+                "text": "Services",
+                "url": "https://www.cheshireimpact.com/services/"
+            },
+            {
+                "text": "About",
+                "url": "https://www.cheshireimpact.com/about/"
+            },
+            {
+                "text": "Contact",
+                "url": "https://www.cheshireimpact.com/contact/"
+            }
+        ]
+    }
+}

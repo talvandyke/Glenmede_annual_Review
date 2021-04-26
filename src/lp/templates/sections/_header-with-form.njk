@@ -1,0 +1,53 @@
+<!-- Editable Hero Background Image -->
+<code pardot-region="Change Header Background image" pardot-region-type="HTML">
+				<!-- Instructions for Updating Background Images Here: https://www.loom.com/share/7bc3a807f3e9446393c3b49bab0fa527 -->
+				<style>
+								header {
+												background-image: url("{{ images.lp_header }}") !important;
+												background-size: cover !important;
+												background-repeat: no-repeat !important;
+												background-position: center top !important;
+												background-color: #222222 !important;
+								}
+				</style>
+</code>
+<!-- Hero -->
+<header class="form-header">
+	{% include "../sections/_nav.njk" %}
+	<div class="container">
+		<div id="hero" class="row">
+			<div class="col-md-6">
+				<div pardot-region="Hero - Content">
+					<h1>Main Headline Dolor Sit Amet</h1>
+					<h3>Smaller Headline Dolor Sit Amet</h3>
+					<p>
+						In arcu neque, feugiat a congue et, congue rutrum nibh. Cras ac orci non quam maximus dignissim.
+						Nulla facilisi. Sed turpis ligula, pulvinar sit amet malesuada quis, rhoncus id ante. Donec
+						imperdiet enim bibendum quam maximus dignissim. Praesent nec massa sem. Nulla vitae lectus ac
+						libero dapibus dictum.
+					</p>
+					<ul>
+						<li>
+							Donec sit amet mauris est. In hac habitasse platea dictumst.
+						</li>
+						<li>
+							Quisque auctor quam gravida neque placerat, a semper nibh elementum. Nam sodales augue
+							gravida, tincidunt erat id, lobortis tellus.
+						</li>
+						<li>Sed suscipit neque sed eros elementum volutpat</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-5 offset-md-1">
+				<div id="form-outer">
+					{% if controls.demo_form %}
+					{% include "../includes/_demo-form.njk" %}
+					{% else %}
+					%%content%%
+					{% endif %}
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

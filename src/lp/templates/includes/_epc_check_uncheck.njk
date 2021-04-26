@@ -1,0 +1,31 @@
+<!-- Check/Uncheck Checkboxes -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        // Uncheck the last checkbox when any other checkbox is checked
+        $(".pd-checkbox input")
+            .not(":last")
+            .click(function () {
+                $(".pd-checkbox input")
+                    .last()
+                    .prop("checked", false);
+            });
+
+        // When first checkbox is checked, check all of the remaining except the last
+        $(".pd-checkbox input")
+            .first()
+            .click(function () {
+                $(".pd-checkbox input")
+                    .not(":last,:first")
+                    .prop("checked", true);
+            });
+
+        // When last checkbox is checked, uncheck all of the remaining
+        $(".pd-checkbox input")
+            .last()
+            .click(function () {
+                $(".pd-checkbox input")
+                    .not(":last")
+                    .prop("checked", false);
+            });
+    });
+</script>

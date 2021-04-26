@@ -1,0 +1,21 @@
+{
+    "general": {
+        "pardot_tracking_domain": "https://go.pardot.com",
+        "lp_base_styles": "https://go.pardot.com/l/33192/2020-07-17/8vwvqm/33192/259974/lp_base_styles_ci.css",
+        "form_styles": "https://go.pardot.com/l/33192/2020-07-17/8vwvqp/33192/259976/form_styles_ci.css",
+        "epc_form": "https://go.pardot.com/l/33192/2020-02-06/8tdj4b",
+        "business_name": "Cheshire Impact",
+        "street_address": "1 Tara Blvd Suite 200",
+        "city_state_zip": "Nashua, NH 03062",
+        "phone": "844-GO-IMPACT",
+        "about": "We're the Digital Marketing Un-Agency. Our goal is to create maximum marketing impact and to do it with measurable results.",
+        "website": "https://cheshireimpact.com",
+        "logo": "https://maljenkins.github.io/cheshPublic/images/cheshlogodark.png",
+        "logo_email": "https://storage.pardot.com/15322/205849/cheshlogo.png",
+        "logo_width": "150",
+        "logo_width_email": "150",
+        "favicon": "https://www.cheshireimpact.com/wp-content/uploads/2018/07/new-favicon.png",
+        "contact_url": "https://www.cheshireimpact.com/contact/",
+        "privacy_url": "https://www.cheshireimpact.com/privacy/"
+    }
+}

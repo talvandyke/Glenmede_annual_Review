@@ -1,0 +1,72 @@
+// Base HTML Elements
+
+* {
+  @include transition(all 0.3s ease);
+}
+
+body {
+  font-size: 16px;
+  font-family: $primary-font;
+  color: color(body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headline-font;
+  font-weight: bold;
+}
+
+p {
+  font-size: inherit;
+}
+
+a {
+  color: $secondary-color;
+  @include transition(all 0.3s ease);
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+// Bootstrap Button Classes
+
+.btn-primary {
+  @include font-size(18px);
+  color: color(white);
+  background-color: $primary-color;
+  border-color: $primary-color;
+  padding: 0.75rem 1.5rem;
+  @include transition(all 0.3s ease);
+  &:hover {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+  }
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    @include font-size(22px);
+    padding: 1rem 2rem;
+  }
+}
+
+.btn-secondary {
+  @extend .btn-primary;
+  background-color: $secondary-color;
+  &:hover {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+}
+
+.btn-light {
+  @extend .btn-primary;
+  background-color: color(transparent);
+  border-color: color(white);
+  &:hover {
+    background-color: color(white);
+    border-color: color(white);
+  }
+}

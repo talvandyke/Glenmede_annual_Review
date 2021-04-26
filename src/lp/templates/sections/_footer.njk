@@ -1,0 +1,50 @@
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4 pardot-region="Footer 1 - Headline">
+          Contact Us
+        </h4>
+        <div pardot-region="Footer 1 - Content">
+          <p>
+            {{general.business_name}}<br/>
+            {{general.street_address}}<br/>
+            {{general.city_state_zip}}
+          </p>
+
+          <p>
+            <a href="tel:{{general.phone}}" target="_blank">{{general.phone}}</a >
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h4 pardot-region="Footer 2 - Headline">
+          Around the Web
+        </h4>
+        {% include "../includes/_social.njk" %}
+      </div>
+      <div class="col-md-4">
+        <h4 pardot-region="Footer 3 - Headline">
+          About Us
+        </h4>
+        <div pardot-region="Footer 3 - Content">
+          <p>
+            {{general.about}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<section id="copyright">
+  <div class="container">
+    <div class="row">
+      <div pardot-region="Copyright" class="col-md-12 text-center small">
+        Copyright &copy;
+        {{general.business_name}}
+        <span id="current-year">2020</span>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+{% set body_class = "default" %}
+
+{% extends "layout/_layout.njk" %}
+
+{% block custom_css %}
+
+    <!-- Place Custom Styles Inside <style> Tag -->
+
+{% endblock %}
+
+{% block header %}
+    {% include "sections/_header.njk"%}
+{% endblock %}
+
+{% block content %}
+
+    {% include "sections/_content-left-form-right.njk" %}
+    {% include "sections/_whitepaper.njk" %}
+    {% include "sections/_image-left-content-right.njk" %}
+    {% include "sections/_headline-cta.njk" %}
+    {% include "sections/_pre-footer.njk" %}
+
+{% endblock %}
+
+{% block footer %}
+    {% include "sections/_footer.njk"%}
+{% endblock %}

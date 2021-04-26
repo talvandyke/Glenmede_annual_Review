@@ -1,0 +1,27 @@
+<!-- Modal -->
+<div class="modal fade" id="pardotModal" tabindex="-1" role="dialog" aria-labelledby="pardotModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div pardot-region="Above Form Content">
+                    <h2>Download the whitepaper!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis commodi beatae voluptatibus sint recusandae quaerat natus blanditiis excepturi. Vitae, culpa.
+                    </p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div id="form-outer">
+                    {% if controls.demo_form %}
+                        {% include "../includes/_demo-form.njk" %}
+                    {% else %}
+                        %%content%%
+                    {% endif %}
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

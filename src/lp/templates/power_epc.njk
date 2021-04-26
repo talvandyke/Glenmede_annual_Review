@@ -1,0 +1,19 @@
+{% set body_class = "epc" %}
+{% extends "layout/_layout.njk" %}
+
+{% block custom_css %}{% endblock %}
+
+{% block header %}
+    {% include "sections/_epc_header.njk"%}
+{% endblock %}
+
+{% block content %}
+
+    {% include "sections/_epc_form_embed.njk" %}
+
+{% endblock %}
+
+{% block footer %}
+    {% include "sections/_footer.njk"%}
+    {% include "includes/_iframe-form-resize-script.njk"%}
+{% endblock %}

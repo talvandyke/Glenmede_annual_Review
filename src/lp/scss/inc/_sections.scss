@@ -1,0 +1,246 @@
+// Defaults
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+  
+// Base Navbar Styles
+nav.navbar {
+  background-color: $secondary-color;
+  color: color(body);
+  padding: calculateRem(30px);
+  // Logo
+  .navbar-brand {
+    color: color(white);
+  }
+  // Mobile Nav Toggle Button
+  .navbar-toggler {
+    background-color: $primary-color;
+    width: 50px;
+    text-align: center;
+    // Nav Toggle Button Icon
+    .navbar-toggler-icon {
+      color: color(white);
+      line-height: 30px;
+      width: 100%;
+    }
+  }
+}
+
+// Desktop/Default Nav
+.navbar-collapse {
+  ul.navbar-nav {
+    li.nav-item {
+      margin: 0 1rem;
+      a.nav-link {
+        text-transform: uppercase;
+        color: color(white);
+        font-weight: 600;
+        letter-spacing: 1px;
+        @include transition(color 0.3s ease);
+        &:hover, &:active, &:focus {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+// Mobile Nav Styles
+.navbar-collapse.show,
+.navbar-collapse.collapsing {
+  background-color: color(white);
+  padding: calculateRem(30px);
+  ul.navbar-nav {
+    li.nav-item {
+      a.nav-link {
+        color: $secondary-color;
+        &:hover, &:active, &:focus {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+
+// Header/Hero Styles
+header {
+  #hero {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: color(white);
+    text-align: center;
+    
+  }
+  // Form In Header
+  &.form-header {
+    #hero {
+      text-align: left;
+    }
+    #form-outer {
+      background-color: color(white);
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      margin-top: 2rem;
+      @media (min-width: 576px) {
+         /* Small devices (landscape phones, 576px and up) */
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+// Two-Column, Form Right
+// section#content-left-form-right {
+// }
+
+// Two-Column Image Left / Content Right    
+// section#image-left-content-right {
+// }
+
+// Video Section  
+section#video {
+  background-color: $secondary-color;
+  color: color(white);
+  text-align: center;
+}
+
+// FAQ Section
+// section#faq {
+// ]}
+
+// 3-Column Services 
+section#three-col-services {
+  background-color: color(grey);
+  text-align: center;
+}
+
+// Testimonial 
+section#testimonial {
+  background-color: $secondary-color;
+  color: color(white);
+  text-align: center;
+}
+
+// Whitepaper
+section#whitepaper {
+  background-color: $primary-color;
+  color: color(white);
+}
+
+// Headline - CTA
+section#headline-cta {
+  background-color: color(grey);
+  color: color(body);
+}
+
+//  Pre-Footer Section
+section#pre-footer {
+  background-color: $primary-color;
+  color: color(white);
+  text-align: center;
+  a {
+    color: color(white) !important;
+  }
+}
+
+// Footer
+footer {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: $secondary-color;
+  color: color(white);
+  text-align: center;
+  a {
+    color: color(white);
+    &:hover {
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+}
+
+// Copright
+#copyright {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  background-color: color(dark-blue);
+  color: transparentize(color(white), 0.2);
+}
+
+// Social Share
+#social-share {
+  margin: inherit auto;
+  text-align: center;
+  padding-bottom: 1rem;
+  a {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 4px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #fff;
+    opacity: 0.75;
+    transition: opacity 0.15s linear;
+    background-color: transparent;
+    @media (min-width: 576px) {
+      /* Small devices (landscape phones, 576px and up) */
+      margin: 6px;
+      width: 24px;
+      height: 24px;
+      font-size: 24px;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+
+
+
+
+// Full Screen w/ Modal
+
+body.full-screen {
+  main {
+    section {
+      min-height: 100vh;
+      background-color: color(white);
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+#pardotModal{
+  background-color: $secondary-color;
+  .modal-dialog {
+    background-color: color(transparent);
+    border-width: 0px;
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) { 
+      max-width: 700px;
+    }
+  }
+  .modal-content {
+    background-color: color(transparent);
+    border-width: 0px;
+  }
+  .modal-header {
+    color: #fff;
+    border-bottom-width: 0px !important;
+    flex-direction: column;
+  }
+  button.close {
+    color: #fff;
+  }
+  #form-outer {
+    background-color: color(white);
+    padding: 1em;
+    @include border-radius(10px);
+  }
+}

@@ -1,0 +1,103 @@
+{
+	"images": {
+		"lp_header": "https://maljenkins.github.io/cheshPublic/images/header_backdrop.jpg",
+		"full_width_email": "https://picsum.photos/600/300"
+	},
+	"links": {
+		"nav": [
+			{
+				"text": "Services",
+				"url": "https://www.cheshireimpact.com/services/"
+			},
+			{
+				"text": "About",
+				"url": "https://www.cheshireimpact.com/about/"
+			},
+			{
+				"text": "Contact",
+				"url": "https://www.cheshireimpact.com/contact/"
+			}
+		],
+		"email_nav": [
+			{
+				"text": "Services",
+				"url": "https://www.cheshireimpact.com/services/"
+			},
+			{
+				"text": "About",
+				"url": "https://www.cheshireimpact.com/about/"
+			},
+			{
+				"text": "Contact",
+				"url": "https://www.cheshireimpact.com/contact/"
+			}
+		]
+	},
+	"controls": {
+		"demo_form": true,
+		"fixed_nav": true,
+		"nav_links": false,
+		"email_nav": 3,
+		"inline_form_fields": true,
+		"bootstrap_form_fields": true,
+		"hml": true
+	},
+	"general": {
+		"pardot_tracking_domain": "https://go.pardot.com",
+		"lp_base_styles": "https://go.pardot.com/l/33192/2020-07-17/8vwvqm/33192/259974/lp_base_styles_ci.css",
+		"form_styles": "https://go.pardot.com/l/33192/2020-07-17/8vwvqp/33192/259976/form_styles_ci.css",
+		"epc_form": "https://go.pardot.com/l/33192/2020-02-06/8tdj4b",
+		"business_name": "Cheshire Impact",
+		"street_address": "1 Tara Blvd Suite 200",
+		"city_state_zip": "Nashua, NH 03062",
+		"phone": "844-GO-IMPACT",
+		"about": "We're the Digital Marketing Un-Agency. Our goal is to create maximum marketing impact and to do it with measurable results.",
+		"website": "https://cheshireimpact.com",
+		"logo": "https://maljenkins.github.io/cheshPublic/images/cheshlogodark.png",
+		"logo_email": "https://storage.pardot.com/15322/205849/cheshlogo.png",
+		"logo_width": "150",
+		"logo_width_email": "150",
+		"favicon": "https://www.cheshireimpact.com/wp-content/uploads/2018/07/new-favicon.png",
+		"contact_url": "https://www.cheshireimpact.com/contact/",
+		"privacy_url": "https://www.cheshireimpact.com/privacy/"
+	},
+	"social": [
+		{
+			"name": "facebook",
+			"link": "#",
+			"lp_icon": "<i class=\"fab fa-facebook-f\"></i>",
+			"email_icon": "https://www.mailjet.com/images/theme/v1/icons/ico-social/facebook.png"
+		},
+		{
+			"name": "twitter",
+			"link": "#",
+			"lp_icon": "<i class=\"fab fa-twitter\"></i>",
+			"email_icon": "https://www.mailjet.com/images/theme/v1/icons/ico-social/twitter.png"
+		},
+		{
+			"name": "linkedin",
+			"link": "#",
+			"lp_icon": "<i class=\"fab fa-linkedin\"></i>",
+			"email_icon": "https://www.mailjet.com/images/theme/v1/icons/ico-social/linkedin.png"
+		}
+	],
+	"styles": {
+		"colors": {
+			"email_background": "#f6f6f6",
+			"footer_background": "#092b4c",
+			"link": "#FF7300",
+			"white": "#ffffff",
+			"grey": "#909090",
+			"primary": "#FF7300",
+			"secondary": "#092b4c",
+			"highlight": "#3b5998",
+			"button": "#FF7300",
+			"body_color": "#333333",
+			"divider": "#cecece"
+		},
+		"fonts": {
+			"link": "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap",
+			"family": "'Open Sans',Arial,Helvetica,sans-serif"
+		}
+	}
+}
